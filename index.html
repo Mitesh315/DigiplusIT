@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My To Do App</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <section class="title">CRUD app</section>
+        <form class="form" action="javascript:void(0)" method="POST" onsubmit="">
+            
+        <input id="add-name" type="text" placeholder="Add name here">
+        <input id="add-loc" type="text" placeholder="Add name here">
+        <input id="add-cgpa" type="text" placeholder="Add name here">
+            <button id="add-button" type="submit" onclick="addTask()">Add to List</button>
+        </form>
+
+        <section class="todo-section">
+        <div class="col-1">
+        <p class="todo-title">List of Students</p>
+        <table id="todo-list1">
+        </table></div>
+       
+        <div hidden id="edit-box" role="aria-hidden">
+            <form action="javascript:void(0);" method="POST" id="save-edit">
+              Name :<input type="text" id="edit-1">
+              Location :<input type="text" id="edit-2">
+              CGPA :<input type="text" id="edit-3">
+        
+              <input type="submit" value="Save" class="complete-task"/> 
+              <a onclick="CloseInput()" aria-label="Close" class="delete-task">&#10006;</a>
+            </form>
+          </div>
+
+      <script src="script.js"></script>
+    </body>
+
+</html>
